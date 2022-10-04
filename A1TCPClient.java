@@ -17,6 +17,7 @@ public class A1TCPClient {
         
 
         //Send the integer to the server...
+        outToServer.writeBytes(br.readLine());
         
     }
 }
