@@ -7,22 +7,16 @@ public class A1TCPClient {
         
         System.out.println("Enter an integer 1, 2, or 3: ");
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in)); //This basically like creating scanner class 
-        String choice = br.readLine();
-        int number = Integer.parseInt(choice);
 
         Socket clientSocket = new Socket("localhost", 11111);
 
-        DataOutputStream outToServer = new DataOutputStream(clientSocket.getOutputStream();
+        DataOutputStream outToServer = new DataOutputStream(clientSocket.getOutputStream());
 
         BufferedReader infromServer = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
 
         
 
         //Send the integer to the server...
-
-
-
-
-
+        
     }
 }
