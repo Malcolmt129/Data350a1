@@ -12,12 +12,20 @@ public class A1TCPClient {
 
         DataOutputStream outToServer = new DataOutputStream(clientSocket.getOutputStream());
 
-        BufferedReader infromServer = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
+        BufferedReader inFromServer = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
 
         
 
         //Send the integer to the server...
         outToServer.writeBytes(br.readLine());
+
+        //Response
+
+        /*do {
+            System.out.println(inFromServer.readLine());;
+        } while((inFromServer.readLine()) != null);*/
+        
+        
         
     }
 }
