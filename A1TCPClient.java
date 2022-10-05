@@ -20,12 +20,5 @@ public class A1TCPClient {
         outToServer.writeBytes(br.readLine());
 
         //Response
-
-        /*do {
-            System.out.println(inFromServer.readLine());;
-        } while((inFromServer.readLine()) != null);*/
-        
-        
-        
     }
 }
